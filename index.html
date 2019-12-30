@@ -23,7 +23,7 @@
   </head>
   <body>
      <!-- Search Content -->
-<div id="searchSlideDown" class="d-none dropdown-unfold u-search-slide-down" aria-labelledby="searchSlideDownInvoker">
+<div id="searchSlideDown" class="dropdown-unfold u-search-slide-down" aria-labelledby="searchSlideDownInvoker">
   <form>
     <!-- Input Group -->
     <div class="input-group input-group-borderless u-search-slide-down__input rounded mb-2">
@@ -74,11 +74,11 @@
         data-header-fix-effect="slide">
   <div class="u-header__section">
     <!-- Topbar -->
-    <div class="d-none container u-header__hide-content pt-2">
+    <div class="container u-header__hide-content pt-2">
       <div class="d-flex align-items-center">
         <div class="ml-auto">
           <!-- Jump To -->
-          <div class="d-none d-inline-block d-sm-none position-relative mr-2">
+          <div class="d-inline-block d-sm-none position-relative mr-2">
             <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
                aria-controls="jumpToDropdown"
                aria-haspopup="true"
@@ -451,7 +451,7 @@
             <!-- Button -->
             <li class="nav-item u-header__nav-last-item">
               <a class="btn btn-sm btn-primary transition-3d-hover" href="https://www.draw.io/?src=about" target="_blank">
-                Start Now
+                Start
               </a>
             </li>
             <!-- End Button -->
@@ -465,7 +465,7 @@
 </header>
 <!-- ========== END HEADER ========== -->
 
-     
+
 <p><!-- ========== MAIN CONTENT ========== --></p>
 <main id="content" role="main">
     <!-- Hero Section -->
@@ -474,16 +474,22 @@
         <div class="col-lg-5 mb-7 mb-lg-0">
           <!-- Info -->
           <div class="mb-5">
-            <h1 class="h2 font-weight-medium mb-3">Diagram with anyone, anywhere.</h1>
-            <p>draw.io is an open source, browser based diagramming application that can be consumed online, as a desktop app, or deployed locally in a variety of formats.</p>
+            <h1 class="h2 font-weight-medium mb-3">Diagrams for all.</h1>
+            <p>Diagram software that just works.</p>
           </div>
 
           <div class="mb-3">
-            <a class="btn btn-primary btn-wide transition-3d-hover mb-2 mb-sm-0 mr-3" href="https://www.draw.io/?src=about" target="_blank">Try now</a>
-            <a class="btn btn-outline-primary btn-wide transition-3d-hover mb-2 mb-sm-0" href="https://github.com/jgraph" target="_blank">draw.io @Github</a>
+            <a class="btn btn-primary btn-wide transition-3d-hover mb-2 mb-sm-0 mr-3" href="https://www.draw.io/" target="_blank">Start</a>
+            <a class="btn btn-outline-primary btn-wide transition-3d-hover mb-2 mb-sm-0" href="https://get.draw.io/"
+              id="downloadLink" target="_blank">Download</a>
+            <br>
+            <div style="display:inline-block;width:24px;"></div>
+            <i><a href="https://www.draw.io/?ui=min&splash=0" style="font-size:80%;" target="_blank">Mobile Version</a></i>
+            <div style="display:inline-block;width:80px;"></div>
+            <i><a href="https://get.draw.io/" style="font-size:80%;" target="_blank">All platforms</a></i>
           </div>
 
-          <p class="small">No login or registration required.</p>
+          <p class="small">Ad-free. Swiss made.</p>
           <!-- End Info -->
         </div>
 
@@ -548,8 +554,8 @@
       <div class="container space-2 space-lg-3">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-          <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase mb-2">Our Features</span>
-          <h2 class="font-weight-medium">draw.io files created in 2005 will load in the app today</h2>
+          <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase mb-2">Our Promise</span>
+          <h2 class="font-weight-medium">We won’t hide your data from you.</h2>
         </div>
         <!-- End Title -->
 
@@ -563,7 +569,7 @@
                     <img src="assets/svg/icons/icon-7.svg" style="margin-right: 24px;margin-top: 10px;" alt="Example diagram" width="56px" height="56px" />
                   <div class="media-body">
                     <h3 class="h6">Share with everyone</h3>
-                      <p class="mb-0">Don't worry about licenses or platforms, it just works.</p>
+                      <p class="mb-0">Don't worry about licenses or platforms. It just works.</p>
                     </div>
                   </div>
                 </a>
@@ -577,7 +583,7 @@
                     </figure>
                     <div class="media-body">
                       <h4 class="h6">Powerful features</h4>
-                      <p class="mb-0">It's got everything you expect from a professional diagramming tool.</p>
+                      <p class="mb-0">Professional diagramming. Easy to use.</p>
                     </div>
                   </div>
                 </a>
@@ -591,7 +597,7 @@
                     </figure>
                     <div class="media-body">
                       <h4 class="h6">Privacy first</h4>
-                      <p class="mb-0">Store your data locally, in your cloud storage, wherever suits you best.</p>
+                      <p class="mb-0">Store your data where you like. Transparent, open source code.</p>
                     </div>
                   </div>
                 </a>
@@ -643,7 +649,7 @@
     <div class="container space-2 space-lg-3">
       <!-- Title -->
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-        <h2 class="font-weight-medium">Integrated with your existing tools</h2>
+        <h2 class="font-weight-medium">Works everywhere</h2>
       </div>
       <!-- End Title -->
 
@@ -659,7 +665,12 @@
               <h4 class="h6 mb-0">GSuite and Google Drive</h4>
             </div>
           </div>
-          <p>Use draw.io diagrams from Google Drive in G Suite and G Suite Enterprise apps.</p>
+          <p>Works with <a href="https://www.draw.io/?mode=google" target="_blank">Google Drive</a> and <a href="https://gsuite.draw.io/" target="_blank">G Suite</a>. Add-on for
+            <a href="https://docsaddon.draw.io/" target="_blank">Docs</a>,
+            <a href="https://sheetsaddon.draw.io/" target="_blank">Sheets</a>
+            and
+            <a href="https://slidesaddon.draw.io/" target="_blank">Slides</a>.
+          </p>
           <!-- End Icon Block -->
         </div>
 
@@ -673,7 +684,7 @@
               <h4 class="h6 mb-0">Sharepoint and OneDrive</h4>
             </div>
           </div>
-          <p>Add draw.io diagrams to Sharepoint and Office 365 apps from OneDrive.</p>
+          <p>Works with <a href="https://www.draw.io/?mode=onedrive" target="_blank">OneDrive and Sharepoint</a>. <a href="https://office.draw.io/" target="_blank">Office 365 app</a> for Word, Powerpoint and Excel.</p>
           <!-- End Icon Block -->
         </div>
 
@@ -687,7 +698,7 @@
               <h4 class="h6 mb-0">Atlassian</h4>
             </div>
           </div>
-          <p>draw.io for Confluence is the highest rated app in the Atlassian Ecosystem*.</p>
+          <p>Highest rated <a href="https://marketplace.atlassian.com/apps/1214854/diagram-viewer-for-confluence-cloud" target="_blank">Confluence app</a> in the Atlassian Marketplace*.</p>
           <!-- End Icon Block -->
         </div>
 
@@ -698,10 +709,13 @@
               <img class="js-svg-injector" src="../../assets/svg/icons/icon-37.svg" alt="SVG" data-parent="#icon37" />
             </figure>
             <div class="media-body">
-              <h4 class="h6 mb-0">Git</h4>
+              <h4 class="h6 mb-0">More</h4>
             </div>
           </div>
-          <p>Distributed teams can work in situ on visual documentation in Github and GitLab.</p>
+          <p>Also works with
+            <a href="https://www.draw.io/?mode=dropbox" target="_blank">Dropbox</a>,
+            <a href="https://www.draw.io/?mode=github" target="_blank">GitHub</a> and
+            <a href="https://www.draw.io/?mode=gitlab" target="_blank">GitLab</a>. All with sharing and revisions.</p>
           <!-- End Icon Block -->
         </div>
 
@@ -715,7 +729,8 @@
               <h4 class="h6 mb-0">Desktop</h4>
             </div>
           </div>
-          <p>For private offline use there is a <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank">Desktop version.</a></p>
+          <p><a href="https://get.draw.io" target="_blank">Download</a>
+            for Windows, macOS, Linux and ChromeOS. <a href="https://github.com/jgraph/docker-drawio" target="_blank">Deploy</a> locally.
           <!-- End Icon Block -->
         </div>
 
@@ -737,7 +752,7 @@
 
       <div class="text-center">
         <div class="mb-3">
-          <a class="btn btn-primary btn-wide transition-3d-hover mb-2 mb-sm-0 mx-1" href="#">See more integrations</a>
+          <a class="btn btn-primary btn-wide transition-3d-hover mb-2 mb-sm-0 mx-1" href="#">See more</a>
           <a class="btn btn-outline-primary btn-wide transition-3d-hover mb-2 mb-sm-0 mx-1" href="#">Let's talk</a>
         </div>
 
@@ -1036,5 +1051,46 @@ You can use HTML elements in Markdown, such as the comment element, and they won
 
 
      <script src="assets/js/bootstrap.min.js"></script>
+
+     <!-- Sets the basepath for the library if not in same directory -->
+     <script type="text/javascript">
+       mxBasePath = 'https://www.draw.io/mxgraph/';
+     </script>
+
+     <script src="https://www.draw.io/js/app.min.js"></script>
+
+     <script>
+      mxUtils.get('https://api.github.com/repos/jgraph/drawio-desktop/releases/latest', function(req)
+      {
+      	var rel = JSON.parse(req.getText());
+
+      	if (rel.tag_name != null && rel.name != null && rel.html_url != null)
+      	{
+      		if (mxClient.IS_MAC)
+      		{
+            document.getElementById('downloadLink').setAttribute('href',
+        			'https://github.com/jgraph/drawio-desktop/releases/download/' +
+        			rel.tag_name + '/draw.io-' + rel.name + '.dmg');
+      		}
+      		else if (mxClient.IS_WIN)
+      		{
+            document.getElementById('downloadLink').setAttribute('href',
+        			'https://github.com/jgraph/drawio-desktop/releases/download/' +
+        			rel.tag_name + '/draw.io-' + rel.name + '-windows-installer.exe');
+      		}
+          else if (mxClient.IS_CHROMEOS)
+      		{
+            document.getElementById('downloadLink').setAttribute('href',
+              'https://chrome.google.com/webstore/detail/drawio-desktop/pebppomjfocnoigkeepgbmcifnnlndla');
+      		}
+      	}
+      });
+
+      mxUtils.get('https://www.draw.io/templates/index.xml', function(req)
+      {
+        // TODO: Slideshow with viewer and templates
+        console.log('templates', req.getXml());
+      });
+     </script>
   </body>
 </html>
