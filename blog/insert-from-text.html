@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Blog - draw.io is sponsoring FOSDEM 2020</title>
+  <title>Blog - Insert from text to create tree and entity diagrams</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -473,7 +473,7 @@
     <div class="container space-2 space-top-md-5 space-top-lg-4 space-bottom-lg-3">
       <div class="w-lg-60 mx-lg-auto">
         <div class="mb-4">
-          <h1 class="h2 font-weight-medium">draw.io is sponsoring FOSDEM 2020</h1>
+          <h1 class="h2 font-weight-medium">Insert from text to create tree and entity diagrams</h1>
         </div>
 
         <!-- Author -->
@@ -486,7 +486,7 @@
                 </div>
                 <div class="media-body font-size-1 ml-3">
                   <span class="h6 font-weight-medium"><a href="blog-profile.html">draw.io</a> <button type="button" class="btn btn-xs btn-soft-primary font-weight-medium transition-3d-hover py-1 px-2 ml-1">Follow</button></span>
-                  <span class="d-block text-muted">07 Nov 2019</span>
+                  <span class="d-block text-muted">27 Dec 2019</span>
                 </div>
               </div>
             </div>
@@ -512,37 +512,97 @@
         </div>
         <!-- End Author -->
 
-        <p>FOSDEM is a free two-day event held each year, organised by volunteers, to promote the use and development of free and open source software. Open source software developers and users can meet, share ideas, and collaborate.</p>
+        <p>Several features in draw.io let you create diagrams automatically from simple text statements.</p>
 
-<p>FOSDEM’20 will be held at the Université Libre de Bruxelles Solbosch Campus in Brussels, Belgium on 1-2 February 2020.</p>
-
-<p>There is no registration and the event is free to attend!</p>
-
-<h2 id="drawio-is-a-sponsor-of-fosdem20">draw.io is a sponsor of FOSDEM’20</h2>
-
-<p>As an <a href="https://github.com/jgraph">open source technology stack</a> and one of the world’s most widely used browser-based diagramming applications, we are <a href="https://fosdem.org/2020/about/sponsors/">proud to be sponsoring FOSDEM’20</a> and supporting open source developers around the world.</p>
-
-<p>Open source has a huge number of advantages for customers. With draw.io you get the following benefits.</p>
+<p>Click on <em>Arrange &gt; Insert &gt; Advanced</em> to find the text entry features. These include:</p>
 
 <ul>
-  <li>Increased trust – anyone can scrutinise the source code.</li>
-  <li>Extendable – open source encourages third-parties to develop integrations with various platforms.</li>
-  <li>No lock-in SaaS – you’ll always have access to the draw.io desktop app even if the website goes away.</li>
+  <li><strong>From Text:</strong> Create a simple hierarchical (tree) diagram or add entities containing simple lists.</li>
+  <li><strong>PlantUML:</strong> Create a variety of UML and flow diagrams, and use the Graphviz DOT code to create tree diagrams, data flows, graphs and more.</li>
+  <li><strong>SQL:</strong> Add database entities to your diagram by <a href="/blog/insert-sql.html">inserting SQL code</a>.</li>
+  <li><strong>CSV:</strong> Create flow charts, tree diagrams and more from comma delimited data and some custom styling code.</li>
 </ul>
 
-<p>Our goal is to <em>provide free, high quality diagramming software for everyone</em> and disrupt the world of diagramming tools.</p>
+<p>The dialog that appears when you select one of these features contains sample text to give you an idea of how to use each feature.</p>
 
-<p><img src="/assets/img/blog/FOSDEM2020.png" width="600" alt="draw.io is sponsoring the FOSDEM'20 conference for open source developers" /></p>
+<h2 id="how-to-create-a-diagram-from-text-in-drawio">How to create a diagram from text in draw.io</h2>
 
-<h2 id="fosdem-hundreds-of-open-source-speakers-and-events">FOSDEM: hundreds of open source speakers and events</h2>
+<p>The text used to define the diagram is quite simple - a shape label, followed by an arrow <code class="highlighter-rouge">-&gt;</code> to represent a connector, followed by another shape label. Each connected pair is on its own line. Be careful to remove any extra spaces before and after the arrows.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Advertising
+Advertising-&gt;Communication
+Communication-&gt;PR
+Communication-&gt;Sponsoring
+Communication-&gt;Media
+Communication-&gt;Events
+Advertising-&gt;Marketing
+Marketing-&gt;Segmentation
+Marketing-&gt;Instruments
+Marketing-&gt;Aims
+Advertising-&gt;Embassy
+Embassy-&gt;Layout
+Embassy-&gt;Appeal
+Embassy-&gt;Theories
+Advertising-&gt;Organization
+Organization-&gt;Content
+Organization-&gt;Budget
+Organization-&gt;Analysis
+</code></pre></div></div>
+<p>You can add a label to a connector.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Organization-&gt;performs-&gt;Analysis
+Organization-&gt;sets-&gt;Budget
+</code></pre></div></div>
+<ol>
+  <li>Click <em>Arrange &gt; Insert &gt; Advanced &gt; From Text</em>.</li>
+  <li>From the drop down selector next to the <em>Close</em> button, select <em>Diagram</em>.
+<img src="/assets/img/blog/insert-from-text-tree-diagram1.png" width="400" alt="Insert text to create a tree diagram in draw.io" /></li>
+  <li>Select all of the sample text in the dialog and paste in your own text. Then click <em>Insert</em>.
+<img src="/assets/img/blog/insert-from-text-tree-diagram2.png" width="600" alt="A diagram automatically created from text in draw.io" /></li>
+</ol>
 
-<p>With thousands of attendees from all over the world taking place, it’s one of the largest events for open source projects. The 400+ speakers and 500+ events are organised by a hard-working team of volunteers.</p>
+<p><strong>Tip:</strong> You can automatically rearrange a diagram if it’s too spread out, like this one is. Select everything, then click <em>Arrange &gt; Layout</em> and select one of the options. For example, rearranging this diagram as a radial tree made it much more attractive.</p>
 
-<p>In this 20th instalment of the conference, it’s free to participate in <a href="https://fosdem.org/2020/news/2019-10-01-accepted-developer-rooms/">more than 50 developer rooms</a> where talks, hacking sessions and open discussions are held on a huge variety of topics, all related to open source development and projects.</p>
+<p><img src="/assets/img/blog/insert-from-text-radial-tree.png" width="600" alt="Auto-rearrange your diagrams via the Arrange &gt; Layout menu in draw.io" /></p>
 
-<p>In addition to the developer rooms, there are keynotes, main track talks, as well as stands you visit to chat in person with open source project developers. Certification organisations also run several exams during the conference that visitors can take.</p>
+<h2 id="how-to-create-entities-for-an-entity-diagram-from-text">How to create entities for an entity diagram from text</h2>
 
-<p>Keep an eye on the <a href="https://fosdem.org/2020/schedule/">FOSDEM website</a> or follow []@fosdem on Twitter](https://twitter.com/fosdem) as the schedule of speakers and events are confirmed.</p>
+<p>If you select <em>List</em> as the diagram type when inserting from text, you can create entity shapes that contain either one or two lists, and a heading. This is useful for UML diagrams, database diagrams when you don’t have the SQL, and more.</p>
+
+<ol>
+  <li>Click <em>Arrange &gt; Insert &gt; Advanced &gt; From Text</em>.</li>
+  <li>Make sure the selector is set to List (it is by default).
+<img src="/assets/img/blog/insert-from-text-entities1.png" width="400" alt="Add entity shapes containing lists by inserting text in draw.io" /></li>
+  <li>Select all of the sample text in the dialog and past in your own text. Then click <em>Insert</em>.
+<img src="/assets/img/blog/insert-from-text-entities2.png" width="600" alt="An entity diagram created from text in draw.io" /></li>
+</ol>
+
+<p>As you can see in the dialog, the child nodes are included as list elements at the top of each entity, and some of the tasks they perform are included in the second list. These two lists are separated by two dashes. Each list element has either a dash or a plus. Here is the partial text used to create the diagram below.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Advertising
+- Communication
+- Marketing
+- Embassy
+- Organization
+
+Marketing
+- Segmentation
+- Instruments
+- Aims
+--
++ testing
+
+Communication
+- PR
+- Sponsoring
+- Media
+- Events
+--
++ customer outreach
++ advertising
++ event coordination
+</code></pre></div></div>
+<p>You can then connect and rearrange these entities to show more clearly how they are related.</p>
+
+<p><img src="/assets/img/blog/insert-from-text-entities-connected.png" width="600" alt="A connected entity diagram example in draw.io" /></p>
 
       </div>
 
