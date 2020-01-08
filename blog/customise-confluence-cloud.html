@@ -617,6 +617,29 @@
 
 <h2 id="custom-fonts">Custom fonts</h2>
 
+<p>You can change what appears by default in the list of fonts in the <em>Font</em> tab of the format panel by editing the draw.io configuration JSON in your Confluence Cloud Settings.</p>
+
+<ol>
+  <li>Go to the draw.io Configuration tab in the draw.io Configuration section of your Confluence Cloud settings.</li>
+  <li>Add the code to customise the default font list. For example, the code below lists only three fonts to appear in the default font list. If you don’t want to override the default fonts, use the <code class="highlighter-rouge">customFonts</code> option instead to add the extra fonts at the top of the fonts list.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ "defaultFonts": ["Courier New", "Tahoma", "Helvetica"] }
+</code></pre></div>    </div>
+    <p><br /><img src="/assets/img/blog/custom-default-fonts-confluence-cloud.png" width="600" alt="Changing the list of default fonts in draw.io for Confluence Cloud" /></p>
+  </li>
+  <li>To use web or Google fonts, you need to tell draw.io where to find the font file - it must be a publicly accessible URL using the <code class="highlighter-rouge">fontCss</code> option, and then add it to either the <code class="highlighter-rouge">defaultFonts</code> or the <code class="highlighter-rouge">customFonts</code> list. For example, this adds two Google fonts and one webfont to the custom fonts list.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+"fontCss": "@import url('https://fonts.googleapis.com/css?family=Princess+Sofia&amp;display=swap'); @import url('https://fonts.googleapis.com/css?family=Girassol&amp;display=swap'); @font-face { font-family: 'Waltograph'; src:  url(https://fontlibrary.org/assets/fonts/waltograph/23a40698cd1bb84f930b7a0884c134a6/ab260a56f2b852b78f81eac337e0a2fc/WaltographRegular.otf) format('opentype') }",
+"customFonts": ["Princess Sofia", "Girassol", "Waltograph"]
+}
+</code></pre></div>    </div>
+  </li>
+  <li>Click <em>Save</em> when you are done.</li>
+</ol>
+
+<p><img src="/assets/img/blog/custom-fonts-multiple-confluence-cloud.png" width="400" alt="Multiple custom fonts can be used in draw.io for Confluence Cloud" /></p>
+
+<p><strong>Exporting diagrams:</strong> The external image and PDF export features do not currently support custom fonts.</p>
+
 <h2 id="custom-shape-and-connector-styles">Custom shape and connector styles</h2>
 
 <h2 id="custom-menu-colour-and-theme">Custom menu colour and theme</h2>
