@@ -565,6 +565,18 @@
 
 <p><img src="/assets/img/blog/file-open-custom-library.png" width="400" alt="Open a custom shape library" /></p>
 
+<h2 id="load-a-custom-library-via-a-url">Load a custom library via a URL</h2>
+
+<p>You can load a custom library hosted somewhere on the web by using a URL parameter when opening the diagrams.net editor. Add the <code class="highlighter-rouge">clibs</code> parameter and the address of the custom library with URL encoded characters.</p>
+
+<p>For example, to open the <a href="https://github.com/jgraph/drawio-libs/blob/master/libs/templates.xml">templates.xml custom shape library</a>, hosted on our GitHub, you would use the following URL:</p>
+
+<p><a href="https://app.diagrams.net/?clibs=Uhttps%3A%2F%2Fjgraph.github.io%2Fdrawio-libs%2Flibs%2Ftemplates.xml"><code class="highlighter-rouge">https://app.diagrams.net/?clibs=Uhttps%3A%2F%2Fjgraph.github.io%2Fdrawio-libs%2Flibs%2Ftemplates.xml</code></a></p>
+
+<p>If you want to only open that particular library, you can add a second parameter, <code class="highlighter-rouge">libs=0</code> to hide the default shape libraries:</p>
+
+<p><a href="https://app.diagrams.net/?libs=0&amp;clibs=Uhttps%3A%2F%2Fjgraph.github.io%2Fdrawio-libs%2Flibs%2Ftemplates.xml"><code class="highlighter-rouge">https://app.diagrams.net/?libs=0&amp;clibs=Uhttps%3A%2F%2Fjgraph.github.io%2Fdrawio-libs%2Flibs%2Ftemplates.xml</code></a></p>
+
 <h2 id="create-your-own-custom-shape-library">Create your own custom shape library</h2>
 
 <ol>
