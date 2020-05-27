@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Configure draw.io</title>
+  <title>Configure the diagrams.net and draw.io editor</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -490,7 +490,7 @@
                 
               
                 
-                    <li class="breadcrumb-item"><a class="current">Configure draw.io</a></li>
+                    <li class="breadcrumb-item"><a class="current">Configure the diagrams.net and draw.io editor</a></li>
                 
               
           </ol>
@@ -501,7 +501,7 @@
 
     <div class="w-lg-60 mx-lg-auto">
       <div class="mb-4">
-        <h1 class="h2 font-weight-medium">Configure draw.io</h1>
+        <h1 class="h2 font-weight-medium">Configure the diagrams.net and draw.io editor</h1>
       </div>
 
       <p>These aspects of diagrams.net are configurable in draw.io for Confluence Server/Cloud, Quip, embed mode, online and Desktop:</p>
@@ -556,7 +556,7 @@
     <p><code class="highlighter-rouge">defaultFonts</code>: An array of font family names in the format panel font drop-down list.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">customFonts</code>: An array of font family names to be added before <code class="highlighter-rouge">defaultFonts</code>. (9.2.4 and later).
+    <p><code class="highlighter-rouge">customFonts</code>: An array of font family names to be added before <code class="highlighter-rouge">defaultFonts</code> (9.2.4 and later).
 <br /><strong>Note:</strong> Fonts must be installed on the server and all client devices, or be added using the <code class="highlighter-rouge">fontCss</code> option. (6.5.4 and later).
 <br /><img src="/assets/img/blog/custom-fonts-list-confluence-cloud.png" width="200" alt="Customise the fonts in diagrams.net" /></p>
   </li>
@@ -583,15 +583,15 @@
 <br />For example, to assign a default <code class="highlighter-rouge">fontFamily</code> of <code class="highlighter-rouge">Courier New</code> to all edges and vertices (and override all other default styles), use <code class="highlighter-rouge">{"defaultVertexStyle": {"fontFamily": "Courier New"}, "defaultEdgeStyle": {"fontFamily": "Courier New"}}</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">defaultLibraries</code>: Defines a semicolon-separated list of library keys (unique names) in a string to be initially displayed in the left panel (e,g. <code class="highlighter-rouge">"general;uml;company-graphics"</code>). Possible keys include custom entry IDs from the libraries field, or <a href="/doc/faq/supported-url-parameters.html">keys for the <code class="highlighter-rouge">libs</code> URL parameter</a> (6.5.2 and later). The default value is <code class="highlighter-rouge">"general;uml;er;bpmn;flowchart;basic;arrows2"</code>.</p>
+    <p><code class="highlighter-rouge">defaultLibraries</code>: Defines a semicolon-separated list of library keys (unique names) in a string to be initially displayed in the left panel (e.g. <code class="highlighter-rouge">"general;uml;company-graphics"</code>). Possible keys include custom entry IDs from the libraries field, or <a href="/doc/faq/supported-url-parameters.html">keys for the <code class="highlighter-rouge">libs</code> URL parameter</a> (6.5.2 and later). The default value is <code class="highlighter-rouge">"general;uml;er;bpmn;flowchart;basic;arrows2"</code>.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">enabledLibraries</code>: Defines an array of strings of library keys which will be available in the <em>More Shapes</em> dialog. If you define this as null, all libraries will be visible. If you leave the array empty, no libraries will be visible (e.g. <code class="highlighter-rouge">["general", "uml"]</code>) (9.2.5 and later).</p>
   </li>
-  <li><code class="highlighter-rouge">libraries</code>: Defines an array of objects that list additional libraries and sections in the left panel and the <em>More Shapes</em> dialog, in the following format: <code class="highlighter-rouge">[section1,...,sectionN]</code>, where:
+  <li><code class="highlighter-rouge">libraries</code>: Defines an array of objects that list additional libraries and sections in the left panel and the <em>More Shapes</em> dialog, in the following format: <code class="highlighter-rouge">[section1,...,sectionN]</code>. Where:
     <ul>
-      <li>each <code class="highlighter-rouge">section</code> has the form <code class="highlighter-rouge">{title: resource, entries: [entry1,...,entryN]}</code>,</li>
-      <li>each <code class="highlighter-rouge">entry</code> has the form <code class="highlighter-rouge">{id: string, preview: string, title: resource, desc: resource, libs: [lib1,..,libN]}</code>,</li>
+      <li>each <code class="highlighter-rouge">section</code> has the form <code class="highlighter-rouge">{title: resource, entries: [entry1,...,entryN]}</code>.</li>
+      <li>each <code class="highlighter-rouge">entry</code> has the form <code class="highlighter-rouge">{id: string, preview: string, title: resource, desc: resource, libs: [lib1,..,libN]}</code>.</li>
       <li>each <code class="highlighter-rouge">lib</code> has the form <code class="highlighter-rouge">{title: resource, url: string OR data: string, tags: string}</code>.
         <ul>
           <li><code class="highlighter-rouge">sections</code> are used for the sections in the <em>More Shapes</em> dialog.</li>
@@ -712,22 +712,22 @@
   <li>
     <p><code class="highlighter-rouge">defaultMacroParameters</code>: Defines overrides for default macro parameters using a JSON structure (9.2.5 and later).</p>
     <ul>
-      <li><code class="highlighter-rouge">border</code>: A boolean. Shows border around viewer if set to true. Default is true.</li>
-      <li><code class="highlighter-rouge">width</code>: An integer. Default width of the viewer. Default is blank.</li>
-      <li><code class="highlighter-rouge">lightbox</code>: A boolean. Enables lightbox(large viewer) if set to true. Default is true.</li>
-      <li><code class="highlighter-rouge">simpleViewer</code>: A boolean. Shows simple viewer if set to true. Default is false.</li>
-      <li><code class="highlighter-rouge">toolbarStyle</code>: A string. Default is “top”. Accepted values are :
+      <li><code class="highlighter-rouge">border</code>: A boolean. Shows a border around the viewer if set to true, where the default is <em>true</em>.</li>
+      <li><code class="highlighter-rouge">width</code>: An integer. The default width of the viewer, where the default is <em>blank</em>.</li>
+      <li><code class="highlighter-rouge">lightbox</code>: A boolean. Enables the lightbox (large viewer) if set to <em>true</em>, where the default is <em>true</em>.</li>
+      <li><code class="highlighter-rouge">simpleViewer</code>: A boolean. Shows the simple viewer if set to <em>true</em> where the default is <em>false</em>.</li>
+      <li><code class="highlighter-rouge">toolbarStyle</code>: A string. The default is <em>“top”</em>, and accepted values are:
         <ul>
-          <li><code class="highlighter-rouge">"top"</code> : Shows toolbar above viewer element on mouse hover.</li>
-          <li><code class="highlighter-rouge">"inline"</code> : Shows toolbar inside viewer element on mouse hover.</li>
-          <li><code class="highlighter-rouge">"hidden"</code> : Hides toolbar.</li>
+          <li><code class="highlighter-rouge">"top"</code> : Shows the toolbar above viewer element on mouse hover.</li>
+          <li><code class="highlighter-rouge">"inline"</code> : Shows the toolbar inside the viewer element on mouse hover.</li>
+          <li><code class="highlighter-rouge">"hidden"</code> : Hides the toolbar.</li>
         </ul>
       </li>
-      <li><code class="highlighter-rouge">links</code>: A string. Default is “auto”. Accepted values are :
+      <li><code class="highlighter-rouge">links</code>: A string. The default is <em>“auto”</em> and accepted values are:
         <ul>
-          <li><code class="highlighter-rouge">"auto"</code> : Opens local links in current window and external links in a new window.</li>
+          <li><code class="highlighter-rouge">"auto"</code> : Opens local links in the current window and external links in a new window.</li>
           <li><code class="highlighter-rouge">"blank"</code> : Opens all links in a new window.</li>
-          <li><code class="highlighter-rouge">"self"</code> : Opens all links in current window.</li>
+          <li><code class="highlighter-rouge">"self"</code> : Opens all links in the current window.</li>
         </ul>
       </li>
     </ul>
@@ -765,7 +765,7 @@
     <p><code class="highlighter-rouge">password</code>: Protects access to the site configuration with an optional string (only site administrators are allowed access).</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">maxHistoryDays</code>: Specifies the number of days for which to keep the editing history. The default is <code class="highlighter-rouge">14</code>. If the last edit is older than this number of days, the history is cleared when editing starts. (Use Preferences, Compress to do this manually.)</p>
+    <p><code class="highlighter-rouge">maxHistoryDays</code>: Specifies the number of days for which to keep the editing history. The default is <code class="highlighter-rouge">14</code>. If the last edit is older than this number of days, the history is cleared when editing starts. Use <em>Preferences &gt; Compress</em> to do this manually.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">debug</code>: Toggles the debug output in the browser console (<code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, where the default is <code class="highlighter-rouge">false</code>).</p>
